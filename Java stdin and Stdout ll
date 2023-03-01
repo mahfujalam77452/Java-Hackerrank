@@ -1,0 +1,21 @@
+
+import java.util.Scanner;
+public class Solution {
+
+    public static void main(String[] args)throws java.io.IOException {
+        Scanner sc=new Scanner(System.in);
+        int a;
+        double b;
+        String s;
+        a=sc.nextInt();
+        b=sc.nextDouble();
+        sc.nextLine();
+        /*
+        It's because when you enter a number then press Enter , input. nextInt() consumes only the number, not the "end of line". When input. nextLine() executes, it consumes the "end of line" still in the buffer from the first input.
+        */
+        s=sc.nextLine();
+        System.out.println("String: "+s);
+        System.out.println("Double: "+b);
+        System.out.println("Int: "+a);
+    }
+}
