@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int count =1;
+        while(sc.hasNext()==true){
+            //hasNext() function will return true if 
+            //it has the next input to read.
+            String s=sc.nextLine();
+            System.out.println(count+" "+s);
+            count++;
+        }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
